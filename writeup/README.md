@@ -1,13 +1,13 @@
-#**Challenge S4-1**
+# **Challenge S4-1**
 
-##**Introduction :**
+## **Introduction :**
 
 Ce challenge était compliqué pour moi, je n’avais jamais abordé le ftp, j’ai dû passer beaucoup de temps à travailler dessus.
 
 On nous donne un fichier fic.pcapng, et l’indice nous annonce 3 étapes à suivre.
 
 
-##**I°/ L’analyse du pcapng :**
+## **I°/ L’analyse du pcapng :**
 
 C’est une capture réseau basique, mais on peut voir dans les statistiques un échange de data FTP.
 
@@ -23,7 +23,7 @@ Aïe coup dur, lorsque l’on veut s’y connecter, on est instantanément kick�
 Je vais donc essayer de récupérer les fichiers avec wget. Voici la commande utilisée : 
 		**wget ftp://fic2020tr_1:cdaisifi-2020@ftp-fic2020tr.alwaysdata.net**
 
-##**II°/ L’analyse des fichiers :**
+## **II°/ L’analyse des fichiers :**
 
 
 On se retrouve avec 3 fichiers : Credits.txt qui comprend la fin de la documentation de volatility, fic.txt qui contient une wordlist, ainsi que settings.xml qui contient des données.
@@ -32,7 +32,7 @@ On y voit la ligne 	**cpassword="8ZuFA0CxVmqxiN86jwdS7cJ9xFTZMxiZmLIhlUBZHp7vEOc
 
 On se souvient alors d’un challenge, et on exécute gpp-decrypt sur ce cpassword, et cela nous donne une image.
 
-##**III°/L’analyse de l’image :**
+## **III°/L’analyse de l’image :**
 
 On a une image ainsi qu’une wordlist, on va donc utiliser steghide, ainsi qu’un joli script ( <3 Bdenneu ).
 
