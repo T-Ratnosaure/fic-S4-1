@@ -47,6 +47,7 @@ for line in $(cat $2); do
 	steghide --extract -sf $stegfile -p "$line" ;
 	echo "$line"
 done
-exit 0```
+exit 0
+```
 
 Et boom on obtient le flag !!!
