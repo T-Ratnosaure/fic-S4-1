@@ -11,13 +11,13 @@
 
 	C’est une capture réseau basique, mais on peut voir dans les statistiques un échange de data FTP.
 
-![alt text](https://github.com/T-Ratnosaure/Writeups/ficS41/image1.png "Image 1")
-![alt text](https://github.com/T-Ratnosaure/Writeups/ficS41/image2.png "Image 2")
+![alt text](https://github.com/T-Ratnosaure/fic-S4-1/writeup/image1.png "Image 1")
+![alt text](https://github.com/T-Ratnosaure/Writeups/fic-S4-1/image2.png "Image 2")
 
 	
 On ne va alors sélectionner que cette trame étrange, et on voit en bas une connection à un serveur ftp avec le nom d’utilisateur et le mot de passe.
 	
-
+writeup/
 	Aïe coup dur, lorsque l’on veut s’y connecter, on est instantanément kické.
 
 	Je vais donc essayer de récupérer les fichiers avec wget. Voici la commande utilisée : 
